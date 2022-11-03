@@ -15,6 +15,10 @@ public class FizzBuzz {
       return "Fizz";
     }
 
+    if(isDivisibleByFive(number)) {
+      return "Buzz";
+    }
+
     return Integer.toString(number);
   }
 }

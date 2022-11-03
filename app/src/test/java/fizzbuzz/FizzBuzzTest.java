@@ -39,4 +39,10 @@ public class FizzBuzzTest {
 
     assertEquals("1", fizzbuzz.fizzBuzzLabeller(1));
   }
+
+  @Test public void returnsBuzzWhenDivisibleByFive() {
+    FizzBuzz fizzbuzz = new FizzBuzz();
+
+    assertEquals("Buzz", fizzbuzz.fizzBuzzLabeller(5));
+  }
 }
