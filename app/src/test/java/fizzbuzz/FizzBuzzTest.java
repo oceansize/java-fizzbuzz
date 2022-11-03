@@ -58,10 +58,9 @@ public class FizzBuzzTest {
     assertEquals("1", fizzbuzz.game(1));
   }
 
-
   @Test public void returnsRelevantOutputForSeriesOfNumbers() {
     FizzBuzz fizzbuzz = new FizzBuzz();
 
-    assertEquals("1, 2", fizzbuzz.game(2));
+    assertEquals("1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz", fizzbuzz.game(15));
   }
 }

@@ -27,16 +27,18 @@ public class FizzBuzz {
   }
 
   public String game(Integer maximumNumber) {
-    String accumulatedOutput = "";
+    StringBuilder accumulatedOutput = new StringBuilder(maximumNumber);
 
     for(Integer currentNumber = 1; currentNumber <= maximumNumber; currentNumber++) {
-      if(accumulatedOutput == "") {
-        accumulatedOutput = Integer.toString(currentNumber);
-      } else {
-        accumulatedOutput = "1, 2";
+
+      if(maximumNumber == 1 || currentNumber == maximumNumber) {
+        accumulatedOutput.append(fizzBuzzLabeller(currentNumber));
+      }
+      else {
+        accumulatedOutput.append(fizzBuzzLabeller(currentNumber) + ", ");
       }
     };
 
-    return accumulatedOutput;
+    return accumulatedOutput.toString();
   }
 }
