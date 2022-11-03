@@ -45,4 +45,10 @@ public class FizzBuzzTest {
 
     assertEquals("Buzz", fizzbuzz.fizzBuzzLabeller(5));
   }
+
+  @Test public void returnsFizzBuzzWhenDivisibleByThreeAndFive() {
+    FizzBuzz fizzbuzz = new FizzBuzz();
+
+    assertEquals("FizzBuzz", fizzbuzz.fizzBuzzLabeller(15));
+  }
 }

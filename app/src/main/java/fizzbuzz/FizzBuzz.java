@@ -11,6 +11,10 @@ public class FizzBuzz {
   }
 
   public String fizzBuzzLabeller(Integer number) {
+    if(isDivisibleByThree(number) && isDivisibleByFive(number)) {
+      return "FizzBuzz";
+    }
+
     if(isDivisibleByThree(number)) {
       return "Fizz";
     }
