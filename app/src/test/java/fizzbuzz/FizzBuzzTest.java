@@ -51,4 +51,17 @@ public class FizzBuzzTest {
 
     assertEquals("FizzBuzz", fizzbuzz.fizzBuzzLabeller(15));
   }
+
+  @Test public void returnsRelevantOutputForFirstNumber() {
+    FizzBuzz fizzbuzz = new FizzBuzz();
+
+    assertEquals("1", fizzbuzz.game(1));
+  }
+
+
+  @Test public void returnsRelevantOutputForSeriesOfNumbers() {
+    FizzBuzz fizzbuzz = new FizzBuzz();
+
+    assertEquals("1, 2", fizzbuzz.game(2));
+  }
 }

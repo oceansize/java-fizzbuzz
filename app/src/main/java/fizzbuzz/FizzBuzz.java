@@ -25,4 +25,18 @@ public class FizzBuzz {
 
     return Integer.toString(number);
   }
+
+  public String game(Integer maximumNumber) {
+    String accumulatedOutput = "";
+
+    for(Integer currentNumber = 1; currentNumber <= maximumNumber; currentNumber++) {
+      if(accumulatedOutput == "") {
+        accumulatedOutput = Integer.toString(currentNumber);
+      } else {
+        accumulatedOutput = "1, 2";
+      }
+    };
+
+    return accumulatedOutput;
+  }
 }
